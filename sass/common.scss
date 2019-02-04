@@ -52,9 +52,15 @@ h3 {
   h2 {
     font-size: 20px;
   }
+  margin-bottom: 50px;
 }
 .tag {
+  width: 150px;
+  a {
+    width: 150px;
+  }
   h3 {
+    width: 150px;
     &:hover {
       color: blue;
     }

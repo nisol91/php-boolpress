@@ -28,12 +28,14 @@
       }
     }
     // var_dump($new_post);die();
+
+    $my_tag_url = 'http://localhost/boolpress/post_detail.php?tag=';
      ?>
     <div class="container">
       <div class="bacheca_2">
         <?php foreach ($new_post as $value) {?>
           <div class="title">
-          <a href="<?php echo $url.$value['slug'] ?>"><h1><?php echo $value['title'] ?></h1></a>
+            <h1><?php echo $value['title'] ?></h1>
             <h3><?php echo $value['published_at'] ?></h3>
           </div>
           <div class="img_text">
@@ -43,7 +45,7 @@
           <div class="tag">
             <h2>Tag:</h2>
             <?php foreach ($value['tag'] as $value) { ?>
-            <a href="#"><h3><?php echo $value; ?></h3></a> <?php } ?>
+            <a href="<?php echo $my_tag_url.$value ?>"><h3><?php echo $value; ?></h3></a> <?php } ?>
           </div>
       <?php }; ?>
       </div>

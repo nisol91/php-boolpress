@@ -60,8 +60,24 @@ h3 {
   margin: 5px;
 }
 
+.bacheca_2 {
+  margin-bottom: 50px;
+}
+
 .bacheca_2 h2 {
   font-size: 20px;
+}
+
+.tag {
+  width: 150px;
+}
+
+.tag a {
+  width: 150px;
+}
+
+.tag h3 {
+  width: 150px;
 }
 
 .tag h3:hover {
