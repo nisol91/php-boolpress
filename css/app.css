@@ -3,53 +3,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 .container {
   width: 100%;
   height: 100vh;
   background: grey;
 }
+
 .templates {
   display: none;
 }
-.bacheca, .bacheca_2 {
+
+.bacheca,
+.bacheca_2 {
   padding: 20px;
   width: 70%;
   height: auto;
   background: lightgrey;
   margin: auto;
 }
+
 .title {
   display: flex;
   background: white;
 }
+
 h1 {
   font-size: 20px;
   margin: 5px;
 }
+
 h2 {
   font-size: 16px;
   margin: 5px;
 }
+
 h3 {
   font-size: 15px;
   color: grey;
   margin: 5px;
 }
+
 .img_text {
   height: 200px;
   width: 100%;
   display: flex;
-  img {
-    max-width: 300px;
-    margin: 5px;
-  }
 }
-.bacheca_2 {
-  h2 {
-    font-size: 20px;
-  }
+
+.img_text img {
+  max-width: 300px;
+  margin: 5px;
 }
+
+.bacheca_2 h2 {
+  font-size: 20px;
+}
+
