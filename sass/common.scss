@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  width: 100%;
+  height: auto;
+  background: grey;
+}
+.templates {
+  display: none;
+}
+.bacheca {
+  padding: 20px;
+  width: 70%;
+  height: auto;
+  background: lightgrey;
+  margin: auto;
+}
+.post_min {
+  background: white;
+  border-radius: 5px;
+  height: auto;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  .top {
+    display: flex;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+    color: lightgrey;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 15px;
+    color: lightgrey;
+    margin-top: 20px;
+  }
+}
+.post_min_detail {
+  background: white;
+  border-radius: 5px;
+  // height: auto;
+  min-height: 300px;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  .top {
+    // display: flex;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+    color: lightgrey;
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    float: right;
+    width: 70%;
+  }
+  h4 {
+    font-size: 20px;
+    color: lightgrey;
+    margin-top: 20px;
+  }
+  .down {
+    width: 100%;
+    height: 200px;
+    .imm {
+      width: 20%;
+      height: 100px;
+      float: left;
+      margin: 10px;
+      margin-left: 0;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .tags {
+    a {
+      text-decoration: none;
+      color: lightgrey;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+}
+.ricerca {
+  width: 70%;
+  height: 40px;
+  background: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    border-radius: 3px;
+    width: 300px;
+    border: .5px solid grey;
+  }
+  .btn {
+    width: 100px;
+    height: 20px;
+    background: grey;
+    margin-left: 2%;
+    cursor: pointer;
+    p {
+      font-size: 7px;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}
+.comments {
+  padding: 20px;
+  width: 70%;
+  height: auto;
+  background: lightgrey;
+  margin: auto;
+  margin-top: 20px;
+}
