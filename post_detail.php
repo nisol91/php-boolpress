@@ -40,7 +40,12 @@
             <img src="<?php echo $value['image']; ?>" alt="">
             <h2><?php echo $value['content']; ?></h2>
           </div>
-      <?php } ?>
+          <div class="tag">
+            <h2>Tag:</h2>
+            <?php foreach ($value['tag'] as $value) { ?>
+            <a href="#"><h3><?php echo $value; ?></h3></a> <?php } ?>
+          </div>
+      <?php }; ?>
       </div>
     </div>
   </body>

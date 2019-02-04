@@ -64,3 +64,7 @@ h3 {
   font-size: 20px;
 }
 
+.tag h3:hover {
+  color: blue;
+}
+
