@@ -25,6 +25,13 @@
 
     ?>
     <div class="container">
+      <div class="input_c">
+        <form class="" action="http://localhost/boolpress/ricerca_tag.php" method="get">
+          <label for="mio_tag">Ricerca per tag</label>
+          <input type="text" placeholder="inserisci tag" name="mio_tag">
+          <input type="submit" name="" value="Search">
+        </form>
+      </div>
       <div class="bacheca">
         <?php foreach ($new_data as $value) {?>
           <div class="title">

@@ -10,4 +10,4 @@
 
 4 - commenti - ok
 
-5 - form (per passare dati senza chiamate ajax, vedi lezione) -
+5 - form (per passare dati senza chiamate ajax) - ok (vedi 'ricerca_tag.php')

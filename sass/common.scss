@@ -7,6 +7,10 @@ a {
   text-decoration: none;
   color: black;
 }
+.input_c {
+  display: flex;
+  justify-content: center;
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -82,11 +86,15 @@ h3 {
   .top {
     display: flex;
     h2 {
-      padding: 3px;
+      padding: 5px;
       color: grey;
     }
   }
   h3 {
     border-bottom: .5px solid grey;
   }
+}
+.nascosto {
+  // display: none;
+  background: red;
 }
