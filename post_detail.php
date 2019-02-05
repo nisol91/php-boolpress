@@ -21,15 +21,23 @@
     //-- scelgo il post con lo slug corretto
 
     $query_ = $_GET['slug'];
+    $tags = $_GET['tag'];
+    $my_tag_url = 'http://localhost/boolpress/post_detail.php?tag=';
+
     $new_post = [];
     foreach ($posts as $value) {
-      if ($value['slug'] === $query_) {
-        $new_post[] = $value;
+      if (empty($tags)) {
+        if ($value['slug'] === $query_) {
+          $new_post[] = $value;
+        }
+      } else {
+        if (in_array($tags, $value['tag'])) {
+          $new_post[] = $value;
+        }
       }
     }
-    // var_dump($new_post);die();
 
-    $my_tag_url = 'http://localhost/boolpress/post_detail.php?tag=';
+
      ?>
     <div class="container">
       <div class="bacheca_2">

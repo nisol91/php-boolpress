@@ -6,7 +6,7 @@
 
 2 - Visualizza singolo post - ok
 
-3 - Cerca tag -
+3 - Cerca tag - ok
 
 4 - commenti -
 
