@@ -16,24 +16,14 @@
   </head>
   <body>
     <?php
-    include 'data.php';
 
-    //-- visualizza data e ora
+      //-- visualizza data e ora
+      include 'php/data_ora.php';
 
-    foreach ($posts as $key => $value) {
-      $date = substr($value['published_at'], 0, 10);
-      $date_mod = str_replace('/', '-', $date);
-      $time = substr($value['published_at'], 10, 20);
-      $new_time = date("H", strtotime($time));
-      $new_date = date("d-M", strtotime($date_mod));
-      //in alternativa potevo usare DateTime::createFromFormat.
-      $value['published_at'] = $new_date. ' at ' .$new_time;
-      $new_data[] = $value;
-    }
 
-    $url = 'http://localhost/boolpress/post_detail.php?slug=';
+      $url = 'http://localhost/boolpress/post_detail.php?slug=';
 
-     ?>
+    ?>
     <div class="container">
       <div class="bacheca">
         <?php foreach ($new_data as $value) {?>

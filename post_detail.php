@@ -16,30 +16,41 @@
   </head>
   <body>
     <?php
-    include 'data.php';
 
-    //-- scelgo il post con lo slug corretto
+      // include 'php/comments.php';
 
-    $query_ = $_GET['slug'];
-    $tags = $_GET['tag'];
-    $my_tag_url = 'http://localhost/boolpress/post_detail.php?tag=';
+      include 'php/data_ora.php';
 
-    $new_post = [];
-    foreach ($posts as $value) {
-      if (empty($tags)) {
-        if ($value['slug'] === $query_) {
-          $new_post[] = $value;
-        }
-      } else {
-        if (in_array($tags, $value['tag'])) {
-          $new_post[] = $value;
+      //-- scelgo il post con lo slug corretto
+
+      $query_ = $_GET['slug'];
+      $tags = $_GET['tag'];
+      $my_tag_url = 'http://localhost/boolpress/post_detail.php?tag=';
+
+      $new_post = [];
+      foreach ($new_data as $value) {
+        if (empty($tags)) {
+          if ($value['slug'] === $query_) {
+            $new_post[] = $value;
+          }
+        } else {
+          if (in_array($tags, $value['tag'])) {
+            $new_post[] = $value;
+          }
         }
       }
-    }
 
-
-     ?>
+    ?>
     <div class="container">
+      <div class="templates">
+        <div class="com">
+          <div class="top">
+            <h1></h1>
+            <h2></h2>
+          </div>
+          <h3></h3>
+        </div>
+      </div>
       <div class="bacheca_2">
         <?php foreach ($new_post as $value) {?>
           <div class="title">
@@ -57,6 +68,10 @@
           </div>
       <?php }; ?>
       </div>
+      <div class="comments">
+        <h4>Comments</h4>
+      </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

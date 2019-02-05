@@ -84,3 +84,33 @@ h3 {
   color: blue;
 }
 
+.comments {
+  width: 70%;
+  background: lightgrey;
+  height: 300px;
+  margin: auto;
+}
+
+.templates {
+  display: none;
+}
+
+.com {
+  width: 100%;
+  height: 100px;
+  background: white;
+}
+
+.com .top {
+  display: flex;
+}
+
+.com .top h2 {
+  padding: 3px;
+  color: grey;
+}
+
+.com h3 {
+  border-bottom: 0.5px solid grey;
+}
+
